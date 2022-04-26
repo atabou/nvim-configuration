@@ -1,8 +1,8 @@
 local map = vim.api.nvim_set_keymap
 
-local opts = { 
-	noremap = true, 
-	silent = true 
+local opts = {
+	noremap = true,
+	silent = true
 }
 
 -- Set map leader
@@ -28,4 +28,5 @@ map('n', '<A-p>', ':BufferPrevious<CR>', opts)
 
 map('n', '<A-c>', ':BufferClose<CR>', opts)
 
-
+-- Set keymap for terminal.
+map('n', '<A-`>', ':split<CR>:terminal<CR>', opts)
