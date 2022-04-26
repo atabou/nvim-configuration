@@ -37,6 +37,11 @@ return require'packer'.startup(function()
         'onsails/lspkind-nvim'
     }
     use 'windwp/nvim-autopairs'
+    use {
+        'nvim-telescope/telescope.nvim',
+        requires = {{'nvim-lua/plenary.nvim'}}
+    }
+    use 'glepnir/dashboard-nvim'
 
     -- Put this at the end after all plugins
     if packer_bootstrap then
