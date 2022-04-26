@@ -36,11 +36,13 @@ return require'packer'.startup(function()
         'hrsh7th/vim-vsnip',
         'onsails/lspkind-nvim'
     }
+    use 'windwp/nvim-autopairs'
 
     -- Put this at the end after all plugins
     if packer_bootstrap then
         require('packer').sync()
     end
+
 
 end)
 
