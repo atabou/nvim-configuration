@@ -1,9 +1,9 @@
 
 local set = vim.opt
 
-vim.notify = require('notify')
-
 set.number = true -- Sets the number line on the left
+
+vim.notify = require('notify')
 
 set.expandtab = true
 set.smarttab = true
