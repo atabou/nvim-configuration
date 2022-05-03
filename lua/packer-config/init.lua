@@ -11,6 +11,11 @@ end
 return require'packer'.startup(function()
     use 'wbthomason/packer.nvim' -- Plugin manager
     use 'EdenEast/nightfox.nvim' -- Theme
+    use 'shaunsingh/nord.nvim' -- Theme
+    use { -- Theme
+        'catppuccin/nvim',
+        as = "catppuccin"
+    }
     use 'kyazdani42/nvim-web-devicons' -- Incons that are used for neovim
     use 'kyazdani42/nvim-tree.lua' -- (Requires web-devicons) Folder structure plugin
     use 'rcarriga/nvim-notify' -- Shows notifications in a formatted way

@@ -22,7 +22,7 @@ lsp_installer.on_server_ready(function(server)
     --
     if server.name == "ccls" then
         opts = {
-            filetypes = {"c", "cpp", "objc", "objcpp", "cuda"}
+            filetypes = {"c", "cpp", "objc", "objcpp", "cuda", "cuh"}
         }
     end
 

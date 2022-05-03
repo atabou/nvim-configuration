@@ -15,7 +15,7 @@ set.incsearch = true
 set.ignorecase = true
 set.smartcase = true
 
-set.splitbelow = true -- When horizontal split occurs it is opened to the right 
+set.splitbelow = true -- When horizontal split occurs it is opened to the right
 set.splitright = true -- When vertical split occurs it is opened to the right
 set.wrap = false -- When text reaches the end of the window it continues on a new line if set to true.
 set.scrolloff = 5
