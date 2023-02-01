@@ -1,5 +1,12 @@
 
-require'nvim-treesitter.configs'.setup {
+local status, treesitter = pcall(require, 'nvim-treesitter.configs')
+
+if not status then
+	print("treesitter not installed.")
+	return
+end
+
+treesitter.setup {
 
     ensure_installed = {
         'python',
@@ -35,7 +42,6 @@ require'nvim-treesitter.configs'.setup {
             keymaps = {
                 goto_definition = "gnd",
                 list_definitions = "gnD",
-                list_definitions = "g0",
                 goto_next_usage = "<A-*>",
                 goto_previous_usage = "<A-#>"
             }
@@ -50,7 +56,7 @@ require'nvim-treesitter.configs'.setup {
     },
 
     rainbow = {
-        
+
         enable = true,
         extended_mode = true,
         max_file_lines = nil
