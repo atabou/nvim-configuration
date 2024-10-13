@@ -14,7 +14,6 @@ treesitter.setup {
         'c',
         'cuda',
         'java',
-
     },
 
 
